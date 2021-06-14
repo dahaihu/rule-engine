@@ -22,7 +22,7 @@ func main() {
 	tree := p.Logical()
 
 	v := visitor.RuleVisitor{
-		Items: `{}`,
+		Items: `{"a":{"b":10}}`,
 	}
 	res := v.Visit(tree)
 	float, ok := res.(bool)

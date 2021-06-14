@@ -80,7 +80,7 @@ func (v *RuleVisitor) VisitAttr(ctx *parser.AttrContext) interface{} {
 			),
 		)
 	}
-	return val
+	return val.Value()
 }
 
 func (v *RuleVisitor) VisitAddSub(ctx *parser.AddSubContext) interface{} {
